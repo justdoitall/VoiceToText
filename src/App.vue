@@ -38,8 +38,7 @@ export default {
             let createAudio = document.createElement("audio");
             createAudio.setAttribute("controls", "controls");
             lookAudio.appendChild(createAudio);
-            createAudio.innerHTML =
-                '<source src="' +
+            createAudio.src =
                 URL.createObjectURL(myBlob) +
                 '" type="audio/ogg" />';
             const form= new FormData();
